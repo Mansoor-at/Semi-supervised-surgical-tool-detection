@@ -2,9 +2,8 @@
 This repository contains code for our paper titled "A semi-supervised teacher-student framework for surgical tool detection and localization"
 ### Dataset Download 
 m2cai16-tool locations dataset can be downloaded [here](https://ai.stanford.edu/~syyeung/tooldetection.html)
+Dataset annotations are in VOC format. However, this work uses coco format. All the required code files for voc to coco conversion can be found in data folder. 
 
-
-Kindly change the dataset path for train and test/val [here](https://github.com/Mansoor-at/Tool-detection/blob/main/ubteacher/data/build.py#L70) and [here](https://github.com/Mansoor-at/Tool-detection/blob/main/ubteacher/data/build.py#L145)
 ### Checkpoints
 Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1NzyuB4019r_-GvP/view?usp=sharing)
 
