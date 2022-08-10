@@ -266,8 +266,8 @@ class BaselineTrainer(DefaultTrainer):
                 self.storage.put_scalars(**metrics_dict)
 
 
-# Unbiased Teacher Trainer
-class UBTeacherTrainer(DefaultTrainer):
+# Tool_detection Trainer
+class tool_detection_trainer(DefaultTrainer):
     def __init__(self, cfg):
         """
         Args:
