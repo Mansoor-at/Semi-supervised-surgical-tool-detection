@@ -35,7 +35,7 @@ def setup(args):
 def main(args):
     cfg = setup(args)
     if cfg.SEMISUPNET.Trainer == "tool_detection":
-        Trainer = UBTeacherTrainer
+        Trainer = tool_detection_trainer
     elif cfg.SEMISUPNET.Trainer == "baseline":
         Trainer = BaselineTrainer
     else:
