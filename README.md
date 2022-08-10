@@ -4,12 +4,11 @@ This repository contains code for our paper titled "A semi-supervised teacher-st
 ![Screenshot](Overview.png)
 
 
+## Intructions
 
 ### Dataset Download 
 m2cai16-tool locations dataset can be downloaded [here](https://ai.stanford.edu/~syyeung/tooldetection.html)
 Dataset annotations are in VOC format. However, this work uses coco format. All the required code files for voc to coco conversion can be found in data folder. 
-
-
 
 ### Build Environment 
 `# create conda env` <br />
