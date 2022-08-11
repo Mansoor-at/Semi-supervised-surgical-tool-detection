@@ -6,8 +6,8 @@ in this paper we introduce a semi-supervised learning (SSL) framework in surgica
 ![Screenshot](Overview.png)
 
 ## Results
-![Screenshot](Quant.png)
-![Screenshot](Qualt.png)
+![Screenshot](quant.png)
+![Screenshot](qualt.png)
 ## Intructions
 
 ### Dataset Download 
