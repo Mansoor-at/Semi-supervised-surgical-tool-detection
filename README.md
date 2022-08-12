@@ -40,7 +40,7 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 * Just change the config file to train on different percentages of labeled set. <br />
 
 ## Evaluation
-* To evaluate the model, use the checkpoint. <br />
+* To evaluate the model, use the following. <br />
 ```sh
 CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
                                   --eval-only \
