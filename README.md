@@ -43,7 +43,7 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 ## Model weights
 Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1NzyuB4019r_-GvP/view?usp=sharing)
 | Backbone  | Supervision |  Batch Size | mAP_50:95 |  Model Weights |
-| ------------- | ------------- |        |          |                |
+| ------------- | ------------- | -------------       |  -------------        |   -------------             |
 | Content Cell  | Content Cell  |        |          |                |
 | Content Cell  | Content Cell  |        |          |                |
 
