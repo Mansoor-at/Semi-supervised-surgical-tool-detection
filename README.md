@@ -44,7 +44,7 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1NzyuB4019r_-GvP/view?usp=sharing)
 | Backbone  | Supervision       |  Batch Size                | mAP_50:95      |  Model Weights       |
 | ------------- | ------------- | -------------              |  ------------- |   -------------      |
-| ResNet50-FPN  | 1%            | 4 labeled + 4 unlabeled    |      20.094          |     [here](https://ai.stanford.edu/~syyeung/tooldetection.html)                 |
+| ResNet50-FPN  | 1%            | 4 labeled + 4 unlabeled    |      20.094          |     [link]([https://ai.stanford.edu/~syyeung/tooldetection.html](https://drive.google.com/file/d/1g3yEILz2bY--PYE8M4PpPxeUPh7Ky5Gb/view?usp=sharing))                 |
 | ResNet50-FPN  | 2%            | 4 labeled + 4 unlabeled    |      32.311         |                      |
 | ResNet50-FPN  | 5%            | 4 labeled + 4 unlabeled    |      42.392        |                      |
 | ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      46.886       |                      |
