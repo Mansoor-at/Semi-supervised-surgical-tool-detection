@@ -13,25 +13,19 @@ in this paper we introduce a semi-supervised learning (SSL) framework in surgica
 ### Dataset Download 
 m2cai16-tool locations dataset can be downloaded [here](https://ai.stanford.edu/~syyeung/tooldetection.html)
 Dataset annotations are in VOC format. However, this work uses coco format. All the required code files for voc to coco conversion can be found in data folder. 
- ```sh
-   `# create conda env` <br />
-`conda create -n ut python=3.6`<br />
-`# activate the enviorment` <br />
-`conda activate ut` <br />
-`# install PyTorch >=1.5 with GPU` <br />
-`conda install pytorch torchvision -c pytorch` <br />
-`# install detectron2` <br />
-[link](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md) to install <br />
-   ```
+
 ### Build Environment 
-`# create conda env` <br />
-`conda create -n ut python=3.6`<br />
-`# activate the enviorment` <br />
-`conda activate ut` <br />
-`# install PyTorch >=1.5 with GPU` <br />
-`conda install pytorch torchvision -c pytorch` <br />
-`# install detectron2` <br />
-[link](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md) to install <br />
+ ```sh
+ # create conda env
+ conda create -n tool python=3.6 
+ # activate the enviorment 
+ conda activate tool
+ # install PyTorch >=1.5 with GPU 
+ conda install pytorch torchvision -c pytorch 
+ # install detectron2 
+[link](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md) to install  
+   ```
+
 
 ### Training 
 * To train the network use following. <br />
