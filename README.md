@@ -52,4 +52,4 @@ Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1Nzy
 
 
 
-## Cite semi-supervised tool detection
+## Citing semi-supervised tool detection
