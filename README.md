@@ -23,6 +23,7 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
  # install PyTorch >=1.5 with GPU 
  conda install pytorch torchvision -c pytorch 
  # install detectron2 
+ https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md
 [https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md) to install  
    ```
 
