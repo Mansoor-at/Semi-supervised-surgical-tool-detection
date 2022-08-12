@@ -41,8 +41,15 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 
 ## Evaluation
 * To evaluate the model, use the checkpoint. <br />
-`CUDA_VISIBLE_DEVICES =1,2 python train_net.py` \ <br />  `--eval-only` \ <br />  `--num-gpus 2` \ <br />`--config configs/coco_supervision/faster_rcnn_R_50_FPN_sup1_run1.yaml\`<br />`SOLVER.IMG_PER_BATCH_LABEL 4 SOLVER.IMG_PER_BATCH_UNLABEL 4` \ <br /> 
-`MODEL.WEIGHTS path_to_checkpoint/checkpoint` 
+```sh
+CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
+                                  --eval-only \
+                                  --num-gpus 2 \
+                                  --config configs/coco_supervision/faster_rcnn_R_50_FPN_sup1_run1.yaml\
+                                  SOLVER.IMG_PER_BATCH_LABEL 4 SOLVER.IMG_PER_BATCH_UNLABEL 4 \
+                                  MODEL.WEIGHTS path_to_checkpoint/checkpoint \
+                                  
+ ```
 
 ## Model weights
 
