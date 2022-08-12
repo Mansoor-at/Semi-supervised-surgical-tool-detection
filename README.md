@@ -47,7 +47,7 @@ Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1Nzy
 | ResNet50-FPN  | 1%            | 4 labeled + 4 unlabeled    |      20.094          |                      |
 | ResNet50-FPN  | 2%            | 4 labeled + 4 unlabeled    |      32.311         |                      |
 | ResNet50-FPN  | 5%            | 4 labeled + 4 unlabeled    |      42.392        |                      |
-| ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      6.886       |                      |
+| ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      46.886       |                      |
 
 
 
