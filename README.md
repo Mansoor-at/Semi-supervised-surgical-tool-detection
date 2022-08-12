@@ -41,7 +41,7 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 `MODEL.WEIGHTS path_to_checkpoint/checkpoint` 
 
 ## Model weights
-Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1NzyuB4019r_-GvP/view?usp=sharing)
+
 | Backbone  | Supervision       |  Batch Size                | mAP_50:95      |  Model Weights       |
 | ------------- | ------------- | -------------              |  ------------- |   -------------      |
 | ResNet50-FPN  | 1%            | 4 labeled + 4 unlabeled    |      20.094          |     [link](https://drive.google.com/file/d/1g3yEILz2bY--PYE8M4PpPxeUPh7Ky5Gb/view?usp=sharing)               |
