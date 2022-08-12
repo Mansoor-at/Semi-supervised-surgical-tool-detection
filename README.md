@@ -30,16 +30,13 @@ Dataset annotations are in VOC format. However, this work uses coco format. All 
 
 
 ## Training 
-* To train the network use following. <br />
+* To train the network on 1% labeled data setting, use following. <br />
 ```sh
   CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
                                     --num-gpus 2 \
                                     --config configs/coco_supervision/faster_rcnn_R_50_FPN_sup1_run1.yaml \
                                     SOLVER.IMG_PER_BATCH_LABEL 4 SOLVER.IMG_PER_BATCH_UNLABEL 4
   ```
-
-`CUDA_VISIBLE_DEVICES =1,2 python train_net.py` \ <br /> `--num-gpus 2` \ <br />`--config configs/coco_supervision/faster_rcnn_R_50_FPN_sup1_run1.yaml\`<br />`SOLVER.IMG_PER_BATCH_LABEL 4 SOLVER.IMG_PER_BATCH_UNLABEL 4` <br />
-
 * Just change the config file to train on different percentages of labeled set. <br />
 
 ## Evaluation
