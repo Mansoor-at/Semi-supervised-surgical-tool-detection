@@ -45,9 +45,9 @@ Download checkpoint [here](https://drive.google.com/file/d/1CrS4oKPWZAlAJh1m1Nzy
 | Backbone  | Supervision       |  Batch Size                | mAP_50:95      |  Model Weights       |
 | ------------- | ------------- | -------------              |  ------------- |   -------------      |
 | ResNet50-FPN  | 1%            | 4 labeled + 4 unlabeled    |      20.094          |     [link](https://drive.google.com/file/d/1g3yEILz2bY--PYE8M4PpPxeUPh7Ky5Gb/view?usp=sharing)               |
-| ResNet50-FPN  | 2%            | 4 labeled + 4 unlabeled    |      32.311         |                      |
-| ResNet50-FPN  | 5%            | 4 labeled + 4 unlabeled    |      42.392        |                      |
-| ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      46.886       |                      |
+| ResNet50-FPN  | 2%            | 4 labeled + 4 unlabeled    |      32.311         |     [link]  (https://drive.google.com/file/d/1iFXRk6E08BaLxt3CQ_yBFpp7a_w3vFcj/view?usp=sharing)               |
+| ResNet50-FPN  | 5%            | 4 labeled + 4 unlabeled    |      42.392        |        [link]   (https://drive.google.com/file/d/1j5LcmOsI7Qs7ZNEAvvhr2T0Yn5mRktpJ/view?usp=sharing)           |
+| ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      46.886       |           [link]   (https://drive.google.com/file/d/1jtFxCn60DK7Ioy49Xqt4Yn2NHxsMTcN8/view?usp=sharing)        |
 
 
 
