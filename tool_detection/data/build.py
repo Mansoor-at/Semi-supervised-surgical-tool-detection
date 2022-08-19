@@ -67,8 +67,8 @@ def divide_label_unlabel(
 # uesed by supervised-only baseline trainer
 def build_detection_semisup_train_loader(cfg, mapper=None):
     register_coco_instances("my_dataset", {},
-                            "/raid/home/A01753093/tool_detection/datasets/coco/annotations/instances_train2017.json",
-                            "/raid/home/A01753093/tool_detection/datasets/coco/train2017")
+                            "./datasets/coco/annotations/instances_train2017.json",
+                            "./datasets/coco/coco/train2017")
     # dataset_dicts = DatasetCatalog.get("my_dataset")
     MetadataCatalog.get("my_dataset").thing_classes = ["Grasper", "Bipolar", "Hook", "Scissors", "Clipper",
                                                   "Irrigator", "SpecimenBag"]
@@ -85,8 +85,8 @@ def build_detection_semisup_train_loader(cfg, mapper=None):
 
     )
     """
-    register_coco_instances("my_dataset", {}, "/raid/home/A01753093/tool_detection/datasets/coco/annotations/instances_train2017.json",
-                                            "/raid/home/A01753093/tool_detection/datasets/coco/train2017")
+    register_coco_instances("my_dataset", {}, "./datasets/coco/annotations/instances_train2017.json",
+                                            "./datasets/coco/train2017")
     dataset_dicts = DatasetCatalog.get("my_dataset")
     MetadataCatalog.get("my_test_set").thing_classes = ["Grasper", "Bipolar", "Hook", "Scissors", "Clipper",
                                                         "Irrigator", "SpecimenBag"]
@@ -142,8 +142,8 @@ def build_detection_test_loader(cfg, dataset_name, mapper=None):
         DatasetCatalog.remove(data_name)
 
     register_coco_instances("my_test_set", {},
-                            "/raid/home/A01753093/tool_detection/datasets/coco/annotations/instances_val2017.json",
-                           "/raid/home/A01753093/tool_detection/datasets/coco/val2017")
+                            "./datasets/coco/annotations/instances_val2017.json",
+                           "./datasets/coco/datasets/coco/val2017")
     # dataset_dicts = DatasetCatalog.get("my_test_set")
     MetadataCatalog.get("my_test_set").thing_classes = ["Grasper", "Bipolar", "Hook", "Scissors", "Clipper",
                                                        "Irrigator", "SpecimenBag"]
@@ -202,8 +202,8 @@ def build_detection_semisup_train_loader_two_crops(cfg, mapper=None):
         )
     else:  # different degree of supervision (e.g., COCO-supervision)
         register_coco_instances("my_dataset", {},
-                                "/raid/home/A01753093/tool_detection/datasets/coco/annotations/instances_train2017.json",
-                                "/raid/home/A01753093/tool_detection/datasets/coco/train2017")
+                                "./datasets/coco/annotations/instances_train2017.json",
+                                "./datasets/coco/train2017")
         # dataset_dicts = DatasetCatalog.get("my_dataset")
         MetadataCatalog.get("my_dataset").thing_classes = ["Grasper", "Bipolar", "Hook", "Scissors", "Clipper",
                                                            "Irrigator", "SpecimenBag"]
@@ -220,8 +220,8 @@ def build_detection_semisup_train_loader_two_crops(cfg, mapper=None):
         )
         '''
         register_coco_instances("my_dataset", {},
-                                "/raid/home/A01753093/tool_detectiondatasets/coco/annotations/instances_train2017.json",
-                                "/raid/home/A01753093/tool_detection/datasets/coco/train2017")
+                                "./datasets/coco/annotations/instances_train2017.json",
+                                "./datasets/coco/train2017")
         dataset_dicts = DatasetCatalog.get("my_dataset")
         MetadataCatalog.get("my_dataset").thing_classes = ["Grasper", "Bipolar", "Hook", "Scissors", "Clipper",
                                                            "Irrigator", "SpecimenBag"]
