@@ -15,6 +15,18 @@ in this paper we introduce a semi-supervised learning (SSL) framework in surgica
 m2cai16-tool locations dataset can be downloaded [here](https://ai.stanford.edu/~syyeung/tooldetection.html)
 Dataset annotations are in VOC format. However, this work uses coco format. All the required code files for voc to coco conversion can be found in data folder. 
 
+```sh
+ |-- .bowerrc
+    |-- .jshintrc
+    |-- .jshintrc2
+    |-- Gruntfile.js
+    |-- README.md
+    |-- bower.json
+    |-- karma.conf.js
+    |-- package.json
+    |-- app
+   ```
+
 ## Installation
 ### Build Environment 
  ```sh
