@@ -50,6 +50,18 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
                                   MODEL.WEIGHTS path_to_checkpoint/checkpoint \
                                   
  ```
+ 
+ ## Resume Training
+* To evaluate the model, use the following. <br />
+```sh
+CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
+                                  --resume \
+                                  --num-gpus 2 \
+                                  --config configs/coco_supervision/faster_rcnn_R_50_FPN_sup1_run1.yaml\
+                                  SOLVER.IMG_PER_BATCH_LABEL 4 SOLVER.IMG_PER_BATCH_UNLABEL 4 \
+                                  MODEL.WEIGHTS path_to_checkpoint/checkpoint \
+                                  
+ ```
 
 ## Model weights
 
