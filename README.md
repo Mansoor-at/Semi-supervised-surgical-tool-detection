@@ -21,7 +21,7 @@ The folder structure to keep images and labels is given as follows.
  |--Tool_detection
     |-- Datasets
         |-- coco
-    |--     |-- train2017
+            |-- train2017
             |-- val2017
             |-- test2017
         |-- annotations
