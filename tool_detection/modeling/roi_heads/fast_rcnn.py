@@ -172,8 +172,6 @@ class FastRCNNOutputs:
             raise ValueError(f"Invalid bbox reg loss type '{self.box_reg_loss_type}'")
 
         loss_box_reg = loss_box_reg / self.gt_classes.numel()
-        # loss_box_reg = loss_box_reg / max(self.gt_classes.numel(), 1.0)
-        # loss_box_reg = loss_box_reg / self.pred_class_logits.shape[0]
         return loss_box_reg
 
     def losses(self):
@@ -267,18 +265,12 @@ class FastRCNNFocalLoss(FastRCNNOutputs):
                 gamma=1.5,
                 num_classes=self.num_classes,
             )
-
+            # focal loss computations
             # total_loss = FC_loss(input=self.pred_class_logits, target=self.gt_classes)
-            # print("class logits {} gt_classes {}".format(self.pred_class_logits, self.gt_classes))
-            # print("Gt classes shape", self.gt_classes.shape)
-            # print("logits shape",self.pred_class_logits.shape )
             # total_loss = total_loss / self.gt_classes.shape[0]
-            # print("total loss after divide", total_loss)
 
             # New loss function
             total_loss = loss(self.pred_class_logits, self.gt_classes)
-            # print("loss", total_loss)
-
             return total_loss
 
 
@@ -293,20 +285,13 @@ class FocalLoss(nn.Module):
         assert gamma >= 0
         self.gamma = gamma
         self.weight = weight
-
         self.num_classes = num_classes
         # print("number of classes", num_classes)
 
     def forward(self, input, target):
-        # focal loss
-        # print("inputs- class logits {} target-gt_classes {}".format(input, target))
         CE = F.cross_entropy(input, target, reduction="none")
-        # print("cross entropy loss", CE.shape)
         p = torch.exp(-CE)
-        # print("cross entroppy", CE)
-        # print("probability", p)
         loss = (1 - p) ** self.gamma * CE
-        # print("prob {} loss {}".format(p, loss.shape))
         return loss.sum()
 
 def loss(logits, targets):
@@ -314,7 +299,7 @@ def loss(logits, targets):
     torch.set_printoptions(profile="full")
     pos_lambda = 1
     neg_lambda = 0.1 / math.log(1.5)
-    L = 6
+    L = 5
     tau = 4
     margin = 0.5
     num_classes = logits.shape[1]
@@ -323,19 +308,11 @@ def loss(logits, targets):
     class_range = torch.arange(0, num_classes, dtype=dtype, device=device).unsqueeze(0)
     t = targets.unsqueeze(1)
     pos_ind = (t == class_range)
-    # print("pos", pos_ind)
     neg_ind = (t != class_range) * (t >= 0)
-    # print("neg", neg_ind)
     pos_prob = logits[pos_ind].sigmoid()
-    # print("logit", logits)
-    # print("logits", logits[pos_ind])
-    # print("pos prob", pos_prob)
     neg_prob = logits[neg_ind].sigmoid()
-    # print("neg prob", len(neg_prob))
     neg_q = F.softmax(neg_prob / neg_lambda, dim=0)
-    # print("neg q", neg_q)
     neg_dist = torch.sum(neg_q * neg_prob)
-    # print("neg dist", neg_dist)
     if pos_prob.numel() > 0:
         pos_q = F.softmax(-pos_prob /pos_lambda, dim=0)
         pos_dist = torch.sum(pos_q * pos_prob)
