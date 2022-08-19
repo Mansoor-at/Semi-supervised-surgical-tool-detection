@@ -52,7 +52,7 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
  ```
  
  ## Resume Training
-* To evaluate the model, use the following. <br />
+* To resume model training, use the following. <br />
 ```sh
 CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
                                   --resume \
@@ -76,3 +76,7 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
 
 
 ## Citing semi-supervised tool detection
+
+
+## Citing semi-supervised tool detection
+If you anyone wants to reproduce the code and encounters a problem, feel free to contact me at my [Email](a01753093@tec.mx)
