@@ -79,4 +79,4 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
 
 
 ## Citing semi-supervised tool detection
-If you anyone wants to reproduce the code and encounters a problem, feel free to contact me at my [Email](mailto:a01753093@tec.mx?subject=[GitHub]%20Source%20Han%20Sans)
+If you anyone wants to reproduce the code and encounters a problem, feel free to contact me at my [a01753093@tec.mx](mailto:a01753093@tec.mx)
