@@ -78,5 +78,5 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
 ## Citing semi-supervised tool detection
 
 
-## Citing semi-supervised tool detection
+## FAQ
 If anyone wants to reproduce the code and encounters a problem or wants to give a suggestion, feel free to contact me at my email [a01753093@tec.mx]
