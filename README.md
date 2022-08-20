@@ -1,5 +1,5 @@
 # Semi-supervised-surgical-tool-detection
-This repository contains code for our paper titled "A semi-supervised teacher-student framework for surgical tool detection and localization"
+This repository contains code for our paper titled **"A semi-supervised teacher-student framework for surgical tool detection and localization"**
 
 in this paper we introduce a semi-supervised learning (SSL) framework in surgical tool detection paradigm which aims to mitigate the scarcity of training data and the data imbalance through a knowledge distillation approach. In our framework, we train a model with labeled data which initialises the teacher-student joint learning, where the student is trained on teacher-generated pseudo labels from unlabeled data. We propose a multi-class distance with a margin based classification loss function in the region-of-interest head of the detector to effectively segregate foreground classes from background region
 
