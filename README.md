@@ -88,7 +88,9 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
 | ResNet50-FPN  | 10%           | 4 labeled + 4 unlabeled    |      46.886       |      [link](https://drive.google.com/file/d/1jtFxCn60DK7Ioy49Xqt4Yn2NHxsMTcN8/view?usp=sharing)         |
 
 
+## Paired t-test 
 
+We performed paired t-test to determine how well proposed model performs with respect to the state-of-the-art. Code with details can be found [here](https://github.com/Mansoor-at/Paired-t-test-for-Object-detection)
 
 ## Citing semi-supervised tool detection
 
