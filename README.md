@@ -95,7 +95,7 @@ We performed paired t-test to determine how well proposed model performs with re
 ## Citing semi-supervised tool detection
 ```sh
 @misc{ali2022semisupervised,
-      title={A semi-supervised Teacher-Student framework #for surgical tool detection and localization}, 
+      title={A semi-supervised Teacher-Student framework for surgical tool detection and localization}, 
       author={Mansoor Ali and Gilberto Ochoa-Ruiz and Sharib Ali},
       year={2022},
       eprint={2208.09926},
