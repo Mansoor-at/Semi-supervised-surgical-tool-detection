@@ -93,7 +93,17 @@ CUDA_VISIBLE_DEVICES =1,2 python train_net.py \
 We performed paired t-test to determine how well proposed model performs with respect to the state-of-the-art. Code with details can be found [here](https://github.com/Mansoor-at/Paired-t-test-for-Object-detection)
 
 ## Citing semi-supervised tool detection
-
+```sh
+@misc{ali2022semisupervised,
+      title={A semi-supervised Teacher-Student framework for surgical tool detection and localization}, 
+      author={Mansoor Ali and Gilberto Ochoa-Ruiz and Sharib Ali},
+      year={2022},
+      eprint={2208.09926},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+                                  
+ ```
 
 ## FAQ
 If anyone wants to reproduce the code and encounters a problem or wants to give a suggestion, feel free to contact me at my email [a01753093@tec.mx]
