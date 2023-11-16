@@ -28,7 +28,7 @@ DATASETS:
   TRAIN: ("my_dataset",)
   TEST: ("my_test_set",)
 SEMISUPNET:
-  Trainer: "tool_detection"
+  Trainer: "UBTeacherTrainer"
   BBOX_THRESHOLD: 0.7
   TEACHER_UPDATE_ITER: 1
   BURN_UP_STEP: 2000
