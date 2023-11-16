@@ -35,14 +35,14 @@ def setup(args):
 def main(args):
     cfg = setup(args)
     if cfg.SEMISUPNET.Trainer == "tool_detection":
-        Trainer = tool_detection_trainer
+        Trainer = UBTeacherTrainer
     elif cfg.SEMISUPNET.Trainer == "baseline":
         Trainer = BaselineTrainer
     else:
         raise ValueError("Trainer Name is not found.")
 
     if args.eval_only:
-        if cfg.SEMISUPNET.Trainer == "tool_detection":
+        if cfg.SEMISUPNET.Trainer == "UBTeacherTrainer":
             model = Trainer.build_model(cfg)
             model_teacher = Trainer.build_model(cfg)
             ensem_ts_model = EnsembleTSModel(model_teacher, model)
