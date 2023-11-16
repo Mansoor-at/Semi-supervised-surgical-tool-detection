@@ -267,7 +267,7 @@ class BaselineTrainer(DefaultTrainer):
 
 
 # Tool_detection Trainer
-class tool_detection_trainer(DefaultTrainer):
+class UBTeacherTrainer(DefaultTrainer):
     def __init__(self, cfg):
         """
         Args:
